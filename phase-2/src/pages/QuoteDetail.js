@@ -5,7 +5,8 @@ const QuoteDetail = () => {
   const { quoteId } = useParams();
   return (
     <>
-      <h1>Quote Detail Page</h1>;<p>{quoteId}</p>
+      <h1>Quote Detail Page</h1>
+      <p>{quoteId}</p>
       <Route path={`/quotes/:quoteId/comments`}>
         <Comments />
       </Route>
